@@ -7,9 +7,9 @@ public class Game {
     public void start(){
         System.out.println("Macera oyununa hoşgeldiniz !");
         System.out.println("Lütfen bir isim giriniz. ");
-        //String playerName = input.nextLine();
-        Player player = new Player("Tezz");
-        System.out.println("Tezz bu karanlık ve sisli adaya hoşgeldin! " );
+        String playerName = input.nextLine();
+        Player player = new Player(playerName);
+        System.out.println(playerName + " bu karanlık ve sisli adaya hoşgeldin! " );
         System.out.println("Oyuna başlamak için karakterinizi id numarasına göre seçiniz!");
         player.selectWarrior();
 
